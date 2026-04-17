@@ -91,21 +91,21 @@ portTASK_FUNCTION(IR_Line, arg)
 			
 		case 426240://10111
 			wheel_GoRight();
-			ESP_LOGI(TAG, "Soft Left 10111 ");
+			ESP_LOGI(TAG, "10111 ");
 			wheel_SetVel(VEL_MAX, VEL_MIN);
 
 			break;
 
 		case 229632://11101
 			wheel_GoLeft();
-			ESP_LOGI(TAG, "Soft RIgth 11101");
+			ESP_LOGI(TAG, "11101");
 			wheel_SetVel(VEL_MIN, VEL_MAX);
 
 			break;
 	
 		case 459008://01111
 			wheel_GoForward();
-			ESP_LOGI(TAG, "HArd Left 01111");
+			ESP_LOGI(TAG, "01111");
 			wheel_SetVel(VEL_MAX, 0);
 
 			break;
@@ -113,14 +113,14 @@ portTASK_FUNCTION(IR_Line, arg)
 						
 		case 491520://11110
 			wheel_GoForward();
-			ESP_LOGI(TAG, "HardRight 11110");
+			ESP_LOGI(TAG, "11110");
 			wheel_SetVel(0, VEL_MAX);
 
 			break;
 					
 		case 229376://11100
 			wheel_GoLeft();
-			ESP_LOGI(TAG, "HardRight 11100");
+			ESP_LOGI(TAG, "11100");
 			wheel_SetVel(VEL_MIN, VEL_MIN);
 
 			break;
@@ -128,7 +128,7 @@ portTASK_FUNCTION(IR_Line, arg)
 									
 		case 393472://00111
 			wheel_GoRight();
-			ESP_LOGI(TAG, "HardLeft 00111");
+			ESP_LOGI(TAG, "00111");
 			wheel_SetVel(VEL_MIN, VEL_MIN); 
 			
 			break;
@@ -136,7 +136,7 @@ portTASK_FUNCTION(IR_Line, arg)
 									
 		case 98304://11000
 			wheel_GoLeft();
-			ESP_LOGI(TAG, "HardRight 11000");
+			ESP_LOGI(TAG, "11000");
 			wheel_SetVel(VEL_MIN, VEL_MIN); 
 			
 			break;
@@ -144,20 +144,20 @@ portTASK_FUNCTION(IR_Line, arg)
 									
 		case 262400://00011
 			wheel_GoRight();
-			ESP_LOGI(TAG, "HardLeft 00011");
+			ESP_LOGI(TAG, "00011");
 			wheel_SetVel(VEL_MIN, VEL_MIN); //(VEL_MIN, 0)
 			
 			break;
 			
 		case 295168://10011
 			wheel_GoForward();
-			ESP_LOGI(TAG, "HardLeft 10011");
+			ESP_LOGI(TAG, "10011");
 			wheel_SetVel(VEL_MIN, 0);
 			break;
 			
 		case 98560://11001
 			wheel_GoForward();
-			ESP_LOGI(TAG, "HardLeft 11001");
+			ESP_LOGI(TAG, "11001");
 			wheel_SetVel(VEL_MIN, 0);
 			
 			break;
@@ -165,7 +165,7 @@ portTASK_FUNCTION(IR_Line, arg)
 			
 		case 491776://11111 Cantinua andando até encontrar a pista
 			wheel_GoForward();
-			ESP_LOGI(TAG, "Looking 11111");
+			ESP_LOGI(TAG, "11111");
 			wheel_SetVel(VEL_MIN, VEL_MIN);
 			
 			
